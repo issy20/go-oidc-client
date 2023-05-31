@@ -50,15 +50,6 @@ type KeyResponse struct {
 	Keys []Key `json:"keys"`
 }
 
-// const (
-// 	idToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJhdWQiOiJwdTh1bTNobW45aG0xZnE2cmQzd21jYjJnaTMzbHIiLCJleHAiOjE2ODQ5Mjg5NzYsImlhdCI6MTY4NDkyODA3NiwiaXNzIjoiaHR0cHM6Ly9pZC50d2l0Y2gudHYvb2F1dGgyIiwic3ViIjoiNDI4Mjg5MTAxIiwiYXpwIjoicHU4dW0zaG1uOWhtMWZxNnJkM3dtY2IyZ2kzM2xyIiwibm9uY2UiOiJhYmMiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJOdWphZ2VzIn0.52qPR2iy3e72wpZK8Cg7ZGZgKc0auGIGAUrH_AOHQPPEPqhLsWjOP3RK8SLuC0mjrQMgjfWZ25ksJ8OX-SHAhzCozVTFNFHJwQYHbEa9Nu7Bvhj67PvNcvkIBdl4kF7D2AezcIa0WHPvsvHJl8KsjwZVfFY11lpTkepCrz34cAfuWQhvG6XVwdTLrzBTaYU-2Due6lZw4jyRAeg6ErVXOiYHDkMgntXgcgakg_CYHKGNwtV1S2PUiztgf18rmXkkNMxAy_kWrCNEyQ6hG2GzuRylZDNof2w7R9816S35oZEIPTYMXvvcpXa-6eXjU9BVq8iVi4hwJ7Hh1PCZSAgMAg"
-// )
-
-// func base64URLEncode(str string) string {
-// 	hash := sha256.Sum256([]byte(str))
-// 	return base64.RawURLEncoding.EncodeToString(hash[:])
-// }
-
 func fillB64Length(jwt string) (b64 string) {
 	// JWT 文字列内の - を + に、_ を / に置換
 	replace := strings.NewReplacer("-", "+", "_", "/")
